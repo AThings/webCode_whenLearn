@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    ul{
+        list-style-type: none;
+    }
+    .menu{
+        margin:100px 45% ;
+    }
+    .menu li{
+        width:150px;
+        border-left:1px solid black;
+        border-right:1px solid black;
+        border-top:1px solid black;
+        text-align: center;
+        background: #007eff75;
+    }
+    .menu li:last-child{
+        border-bottom:1px solid black;
+    }
+    .menu2{
+        margin:auto;
+    }
+    .menu .menu2 li{
+        width:100px;
+    }
+</style>
+<body>
+    <ul class="menu">
+        <li>
+            一
+            <ul class="menu2">
+                <li>一</li>
+                <li>二</li>
+            </ul>
+        </li>
+        <li>二</li>
+        <li>三</li>
+    </ul>
+</body>
+</html>

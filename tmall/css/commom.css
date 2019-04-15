@@ -1,0 +1,222 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.wrapper{
+         margin:0 auto;
+}
+h3{
+    font-size: 100%;
+    font-weight:700;
+    -webkit-margin-before:-3px;
+    -webkit-margin-after:-3px;
+    -webkit-margin-start:0;
+    -webkit-margin-end:0;
+}
+/*nav开始*/
+    .nav{
+        height:32px;
+        background:#f2f2f2;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .nav-box{
+        background:#f2f2f2 ;
+        width:1246.8px;
+        height: 32px;
+        font-family: "微软雅黑",serif;
+        font-size: 12px;
+        line-height: 32px;
+        color:#999;
+    }
+    .nav-box a{
+        color:#999;
+    }
+    .nav-login{
+        float:left;
+    }
+    .nav-box a:hover{
+        color: #FF0036;
+    }
+    .nav-login a{
+        padding:0 10px;
+    }
+    .nav-login a,.nav-login span{
+        margin: auto;
+        float:left;
+    }
+    .nav-meun{
+        float:right;
+    }
+    .nav-meun>li{
+        float:left;
+        position: relative;
+    }
+
+    .rot-arr{
+        padding:0 14px 0 10px;
+        border:solid transparent;
+        border-width:0 1px;
+    }
+    .rot-arr:hover::after{;
+        transform:rotate(180deg) ;
+        /*top:13px;*/
+    }
+    .rot-arr:hover{
+
+        text-decoration: underline;
+        background-color:white;
+        height:33px;
+        border-bottom:transparent;
+        color: #FF0036;
+    }
+    .rot-arr::after{
+        content: "";
+        width:0;
+        height: 0;
+        border-width:3px;
+        border-color: #999 transparent transparent transparent;
+        border-style: solid;
+        position: absolute;
+        right:3px;
+        top:15px;
+        transition: all 0.153s linear;
+        transform-origin: 3px 1.5px;
+    }
+    .nav-link{
+        padding:0;
+    }
+    .nav-li{
+        padding:0 10px;
+    }
+    .sub-nav-meun{
+        display:none;
+        padding:8px 8px;
+        border:1px solid #f2f2f2;
+        border-top:transparent;
+        position:absolute;
+        left:-2px;
+        width:74px;
+        background:white;
+        line-height:18px;
+    }
+    .nav-thing:hover .sub-nav-meun {
+        display: block;
+    }
+    .nav-thing{
+        position:relative;
+    }
+    .sn-separator{
+        padding:0;
+        width:1px;
+        height:14px;
+        border-right:1px solid #999999;
+        float:left;
+        margin:9px 0 9px 0;
+    }
+    .col-nav-meun{
+        position:absolute;
+        width:74px;
+        padding:4px 8px;
+        border:1px solid #f2f2f2;
+        border-top:transparent;
+        position:absolute;
+        left:-2px;
+        display: none;
+        background:white;
+        line-height:18px;
+    }
+    .nav-thing:hover .col-nav-meun{
+        display: block;
+    }
+    .iconfont{
+        color: #ff0036;
+        /*font-size:1px;*/
+    }
+    .logo{
+        width:240px;
+        height:130px;
+        float:left;
+    }
+    .headersearch{
+        width:625px;
+        height:68px;
+        float:left;
+        margin:50px 0 0 100px;
+    }
+    .search-extra{
+        margin:0 auto;
+    }
+    .search{
+        width:625px;
+        height:36px;
+        border-top:2px solid #ff0036;
+        border-left:2px solid #ff0036;
+        border-bottom:2px solid #ff0036;
+        background: #ff0036;
+    }
+    .search-text{
+        width: 438px;
+        height: 26px;
+        padding:5px 3px 5px 5px;
+        border:none;
+        outline:none;
+        float:left;
+    }
+    .search-button{
+        width:179px;
+        height:36px;
+        float:left;
+        background:#ff0036;
+        border:none;
+        color:white;
+        font-weight: 700;
+        font-size:18px;
+        letter-spacing: 5px;
+    }
+    .header{
+        width:1286.8px;
+        height:130px;
+    }
+    .mer-nav-meun{
+        width:122px;
+        height:158.6px;
+        padding:8px 10px;
+        border-right: 1px solid #f2f2f2;
+        border-left: 1px solid #f2f2f2;
+        border-bottom: 1px solid #f2f2f2;
+        position:absolute;
+        right:-2px;
+        line-height:21.6px;
+        overflow: hidden;
+    }
+    .merchant{
+        width:142px;
+        height:110.2px;+
+        /*padding:5px 0;*/
+        border-bottom:1px dotted #827777;
+    }
+    .merchant-float{
+       float:right;
+
+    }
+    .mer-nav-meun a{
+        width:48px;
+        height:21.6px;
+        margin-right:20px;
+    }
+    .help{
+        width:142px;
+        height:38.4px;
+        border-bottom:1px dotted #827777;
+        padding:5px 0;
+    }
+    /*.login-bin{*/
+        /*display: inline;*/
+    /*}*/
+/*nav结束*/

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+邮箱：<input type="text">
+网址：<input type="text">
+数字：<input type="text">
+<button type="button">提交</button>
+<script>
+    let oBtn = document.getElementsByTagName("button")[0];
+    let aInput = document.getElementsByTagName("input");
+    oBtn.onclick = function () {
+        if(aInput[0].value.search(/(\w+)@(\w+)\.com/) !== -1){
+            if(aInput[1].value.search(/w{3}\.(\w+)\.com/) !== -1){
+                if(aInput[2].value.search(/\d+/) !== -1){
+                    alert("right");
+                }
+                else
+                {
+                    alert("number ERROR");
+                }
+            }
+            else
+            {
+                alert("web ERROR");
+            }
+        }
+        else
+        {
+            alert("email ERROR");
+        }
+    }
+</script>
+</body>
+</html>

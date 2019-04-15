@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/commom.css">
+</head>
+<body>
+<div class="site-nav">
+    <div class="wrapper layout">
+        <div class="sn-left">
+            <ul class="sn-login-info">
+            <li>喵,欢迎来到天猫</li>
+            <li><a href="#">请登录</a></li>
+            <li><a href="#">免费注册</a></li>
+            </ul>
+        </div>
+        <div class="sn-right">
+            <ul class="sn-menu-info">
+                <li class="mytaobao have_underline">
+                    <a href="">我的淘宝</a>
+                    <div class="menu-bd">
+                        <div class="menu-bd-panel">
+                            <a href="#">已买到的宝贝</a>
+                            <a href="#">已卖出的宝贝</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">购物车<span>0</span>件</a></li>
+                <li class="haveBorder sn-favorite have_underline"><a href="">收藏夹</a></li>
+                <li><b></b></li>
+                <li><a href="">手机版</a></li>
+                <li><a href="">淘宝网</a></li>
+                <li class="have_underline"><a href="">商家支持</a></li>
+                <li>网站导航</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="header">
+    <div class="in_header layout ">
+        <div class="logo">
+            <img src="image/logo.jpg" alt="">
+        </div>
+        <div class="seach">
+            <form action="">
+                <input type="text" class="seach_in">
+                <input type="submit" class="seach_button" value="搜索">
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<div class="fangda">
+    <img src="image/01.jpg" alt="">
+</div>
+<script>
+    var oimg = document.getElementsByClassName("fangda")[0].getElementsByTagName("img")[0];
+    oimg.onmouseout=function(e){
+        oimg.onmousemove=null;
+    };
+    oimg.onmousedown=function(e){
+        e.preventDefault();
+        var theX=e.clientX;
+        var theY=e.clientY;
+        oimg.onmousemove=function (e) {
+            console.log("ss");
+            console.log(theX);
+            console.log(theY);
+            oimg.style.left=this.offsetleft+e.clientX-theX+"px";
+            oimg.style.top=this.offsettop+e.clientY-theY+"px";
+        };
+    };
+
+</script>
+</body>
+</html>

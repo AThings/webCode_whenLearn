@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .box{
+            margin:50px 40% ;
+        }
+        .meun{
+            width:120px;
+            height:300px;
+            position: relative;
+        }
+        .meun li:hover{
+            opacity: 1;
+        }
+        .meun li:hover .meun2{
+            display: block;
+        }
+        .meun2{
+            width:120px;
+            height:300px;
+            position: absolute;
+            right:-120px;
+            top:61px;
+            display: none;
+        }
+        .meun2 li{
+            border-left: 1px solid black;
+        }
+        .meun li{
+            text-align: center;
+            height: 60px;
+            line-height: 60px;
+            border-bottom: 1px solid black;
+            background: #e5e5e5;
+            border-radius: 10px;
+            box-shadow: 1px 1px #1a0303a8;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul class="meun">
+            <li>一</li>
+            <li>
+                二
+                <ul class="meun2">
+                    <li>一</li>
+                    <li class="a">二</li>
+                    <li>三</li>
+                    <li>四</li>
+                    <li>五</li>
+                </ul>
+            </li>
+            <li>三</li>
+            <li>四</li>
+            <li>五</li>
+        </ul>
+    </div>
+</body>
+</html>

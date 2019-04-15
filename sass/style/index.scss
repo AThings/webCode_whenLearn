@@ -1,0 +1,57 @@
+$color:yellow;
+$width:1000px;
+$al:height;
+/*这是SCSS练习*/
+.div{
+  color:$color;
+  font-size:14px;
+  background: blue;
+  width:$width;
+  height:100px;
+  .box{
+    width:100px;
+    height:100px;
+    border:1px solid black;
+  }
+  li{
+    float:left;
+  }
+  &:hover{
+    display: block;
+    #{$al}:round(6.4px);
+  }
+  &-this{
+    border:{
+      left: {
+        width:1px;
+        color:black;
+        style:solid;
+      }
+    }
+  }
+}
+
+@mixin lala($width:100px,$hei:20px){
+  width: $width - 10px;
+  background: yellow;
+  height: $hei + 20px;
+}
+.nav{
+  @include lala;
+  display: inline-block;
+}
+
+.samestyle{
+  float:left;
+  display: inline;
+  background: white;
+}
+
+li{
+  @extend .samestyle;
+}
+
+ul{
+  @extend .samestyle;
+}
+

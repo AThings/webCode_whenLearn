@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul{
+            border: 1px solid #000;
+            width:100px;
+            text-align: center;
+            display:none;
+            position: absolute;
+        }
+        li {
+            list-style-type: none;
+            border-bottom: 1px solid #000;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        li:hover{
+        background-color: gray;
+        }
+
+        #id a:hover{
+            color :gray;
+        }
+    </style>
+</head>
+<body>
+
+    <ul id="link">
+        <li >设置代办</li>
+        <li>设置未读</li>
+        <li>设置已读</li>
+        <li>删除右键</li>
+    </ul>
+    <script>
+       var on_righthand = document.getElementById("link");
+       //console.log(on_righthand);
+       document.oncontextmenu=function (e){
+           console.log(on_righthand);
+           on_righthand.style.display = "block";
+           on_righthand.style.top = e.clientY+"px";
+           on_righthand.style.left = e.clientX+"px";
+           //return false;
+           e.preventDefault();
+       };
+       // document.onmousedown = function (ev) {
+       //     on_righthand.style.display = "none";
+       // };
+       var a_li = document.getElementsByTagName("li");
+       for(var i=0;i<a_li.length;i++){
+           a_li[i].index = i;
+           a_li[i].onclick = function () {
+                console.log(this.index);
+                for(var j=0;j<a_li.length;j++){
+                    a_li[j].className = '';
+                }
+                this.className = "aa";
+           }
+       }
+       // on_righthand.onmouseover = function (ev) {
+       //     on_righthand.style.background = "gray";
+       // };
+       // on_righthand.onmouseout = function (ev) {
+       //     on_righthand.style.background = "";
+       // }
+    </script>
+</body>
+</html>

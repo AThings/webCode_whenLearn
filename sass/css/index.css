@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/*杩欐槸SCSS缁冧範*/
+.div {
+  color: yellow;
+  font-size: 14px;
+  background: blue;
+  width: 1000px;
+  height: 100px;
+}
+.div .box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+.div li {
+  float: left;
+}
+.div:hover {
+  display: block;
+  height: 6px;
+}
+.div-this {
+  border-left-width: 1px;
+  border-left-color: black;
+  border-left-style: solid;
+}
+
+.nav {
+  width: 90px;
+  background: yellow;
+  height: 40px;
+  display: inline-block;
+}
+
+.samestyle, li, ul {
+  float: left;
+  display: inline;
+  background: white;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="div1" class="domtest">
+        hello
+    </div>
+    <div class="super">
+        <span class="domtest">first</span>
+        <span class="domtest">second</span>
+        <span class="domtest2">nono</span>
+    </div>
+    <div class="div_arr">1</div>
+    <div class="div_arr">2</div>
+    <div class="div_arr">3</div>
+    <span class="domtest">span</span>
+    <script>
+        // var o_div1 = document.getElementById("div1");
+        // document.write(o_div1.innerHTML);
+        // o_div1.innerHTML = "hello1";
+        // console.log(o_div1);
+        // console.log(o_div1.innerHTML);
+        // var a_div = document.getElementsByClassName("div_arr");
+        // console.log(a_div);
+        // for(var i=0;i<a_div.length;i++){
+        //     console.log(a_div[i].innerHTML);
+        // }
+        // document.write(window.innerHeight + "<br/>");
+        // document.write(window.innerWidth);
+        var all_div = document.getElementsByTagName("div");
+        console.log(all_div);
+        // for(var j=0;j<all_div.length;j++){
+        //     if(all_div[j].className === "div_arr"){
+        //         console.log("find");
+        //         all_div[j].innerHTML = "find div_arr";
+        //         console.log(all_div[j].innerHTML);
+        //
+        //     }
+        // }
+
+    </script>
+</body>
+</html>
